@@ -1,0 +1,29 @@
+.pagination{
+  display:flex;
+  align-items:stretch;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.pagination-item{
+  width:30px;
+  height: 30px;
+  text-align:center;
+  line-height: 30px;
+  border: none;
+  padding: 0;
+  background-color: #efeaea;
+  cursor: pointer;
+}
+button.pagination-item:first-child{
+  border-radius: 16px 0 0 16px;
+}
+
+button.pagination-item:last-child{
+  border-radius: 0 16px 16px 0;
+}
+
+.pagination-item.selected{
+  background-color: #f83600;
+  color: #fff;
+}

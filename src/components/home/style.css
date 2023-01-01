@@ -1,0 +1,49 @@
+.grid{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat( 1, 1fr );
+  gap: 30px;
+}
+
+@media screen and ( min-width: 800px )
+{
+    .grid
+    {
+        grid-template-columns: repeat( 2, 1fr );
+    }
+}
+
+@media screen and ( min-width: 1200px )
+{
+    .grid
+    {
+        grid-template-columns: repeat( 4, 1fr );
+    }
+}
+
+
+.chip-wrapper{
+  display:flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.chip{
+  background: #fff;
+  border: 2px solid var( --color );
+  border-radius: 19px;
+  padding: 4px 16px;
+  color: var( --color );
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+.chip.selected{
+  background: var( --color );
+  color: #fff;
+}
